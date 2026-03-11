@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Wallet icon - EXACT design from Figma with all details -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <!-- Main wallet rectangle body - sharp left, rounded right -->
+    <path
+        android:pathData="M3,7 L21,7 A 0,1.5 0 0,1 21,8.5 L21,19 A0,1.5 0 0,1 19.5,19 L3,19 L3,7 z"
+        android:strokeColor="#22D3EE"
+        android:strokeWidth="2"
+        android:fillColor="@android:color/transparent"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"/>
+
+    <!-- Fold line at top -->
+    <path
+        android:pathData="M3,10 L21,10"
+        android:strokeColor="#22D3EE"
+        android:strokeWidth="1"
+        android:strokeLineCap="round"
+        android:strokeAlpha="1.0"/>
+
+    <!-- Card pocket line (subtle) -->
+    <path
+        android:pathData="M7,12.5 L12,12.5"
+        android:strokeColor="#22D3EE"
+        android:strokeWidth="1.5"
+        android:strokeLineCap="round"
+        android:strokeAlpha="0.6"/>
+    <path
+        android:pathData="M8,12.5 L12,12.5"
+        android:strokeColor="#22D3EE"
+        android:strokeWidth="1.5"
+        android:strokeLineCap="round"
+        android:strokeAlpha="0.6"/>
+    <path
+        android:pathData="M7,15 L12,15"
+        android:strokeColor="#22D3EE"
+        android:strokeWidth="1.5"
+        android:strokeLineCap="round"
+        android:strokeAlpha="0.6" />
+    <path
+        android:pathData="M8,15 L12,15"
+        android:strokeColor="#22D3EE"
+        android:strokeWidth="1.5"
+        android:strokeLineCap="round"
+        android:strokeAlpha="0.6"/>
+    <!-- Snap button - outer ring FIRST (thinner, faded) -->
+    <path
+        android:pathData="M18,13 m-3,0 a3,3 0 1,1 6,0 a3,3 0 1,1 -6,0"
+        android:strokeColor="#22D3EE"
+        android:strokeWidth="0.8"
+        android:fillColor="@android:color/transparent"
+        android:strokeAlpha="0.25"/>
+
+    <!-- Snap button - inner circle SECOND (bigger, solid) -->
+    <path
+        android:pathData="M18,13 m-2.2,0 a2.2,2.2 0 1,1 4.4,0 a2.2,2.2 0 1,1 -4.4,0"
+        android:fillColor="#22D3EE"/>
+
+
+
+</vector>

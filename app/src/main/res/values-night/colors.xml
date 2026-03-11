@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Theme-Specific Toolbar Color for Dark Mode (Dark Background) -->
+    <color name="toolbar_theme_color">@color/dark_card</color>
+
+    <!-- Paste Tints Mapping for Dark Mode (Keep Dark) -->
+    <color name="tint_income">@color/dark_card</color>
+    <color name="tint_expense">@color/dark_card</color>
+    <color name="tint_card_base">@color/dark_card</color>
+    <color name="input_background">@color/dark_surface_elevated</color>
+    
+    <!-- Summary Card Background (Dark) -->
+    <color name="card_summary_bg">#1AFFFFFF</color>
+    <color name="card_summary_stroke">#33FFFFFF</color>
+    
+    <!-- Book Card Colors (Dark Mode Override) -->
+    <color name="light_card">@color/dark_card</color>
+    <color name="light_card_stroke">@color/dark_card_stroke</color>
+    <color name="light_ripple">#1AFFFFFF</color>
+    <color name="light_toolbar_background">@color/dark_surface_elevated</color>
+    <color name="light_accent">@color/cyan</color>
+</resources>

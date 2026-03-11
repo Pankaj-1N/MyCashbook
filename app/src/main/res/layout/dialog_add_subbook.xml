@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:elevation="8dp"
+    app:cardCornerRadius="16dp"
+    app:cardBackgroundColor="@color/card_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Header -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Create Sub-Book"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:fontFamily="@font/roboto_medium"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Sub-book Name Input -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:boxStrokeColor="@color/orange_accent"
+            app:hintTextColor="@color/text_secondary"
+            app:boxBackgroundMode="outline">
+
+            <EditText
+                android:id="@+id/editSubBookName"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Sub-book name"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textColorHint="@color/text_secondary"
+                android:fontFamily="@font/roboto_regular"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Sub-book Description Input -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            app:boxStrokeColor="@color/orange_accent"
+            app:hintTextColor="@color/text_secondary"
+            app:boxBackgroundMode="outline">
+
+            <EditText
+                android:id="@+id/editSubBookDescription"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Description (optional)"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textColorHint="@color/text_secondary"
+                android:fontFamily="@font/roboto_regular"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Button Row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end">
+
+            <!-- Cancel Button -->
+            <Button
+                android:id="@+id/buttonCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:text="Cancel"
+                android:textColor="@color/white"
+                android:fontFamily="@font/roboto_medium"
+                android:background="@drawable/btn_secondary_bg"
+                android:paddingHorizontal="24dp"
+                android:layout_marginEnd="12dp" />
+
+            <!-- Create Button -->
+            <Button
+                android:id="@+id/buttonCreate"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:text="Create"
+                android:textColor="@color/white"
+                android:fontFamily="@font/roboto_medium"
+                android:background="@drawable/btn_primary_bg"
+                android:paddingHorizontal="24dp"
+                android:enabled="false" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

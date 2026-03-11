@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Transaction card with integrated curved green left accent -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <!-- Main card background with rounded corners -->
+    <item android:left="8dp">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/tint_income" />
+            <corners android:radius="16dp" />
+        </shape>
+    </item>
+    
+    <!-- Left accent strip - thicker and attached with matching curves -->
+    <item android:width="8dp">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/income_green" />
+            <corners 
+                android:topLeftRadius="16dp"
+                android:bottomLeftRadius="16dp"
+                android:topRightRadius="0dp"
+                android:bottomRightRadius="0dp" />
+        </shape>
+    </item>
+    
+</layer-list>

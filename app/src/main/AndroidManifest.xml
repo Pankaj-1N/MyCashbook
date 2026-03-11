@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.mycashbook.app">
+
+    <!-- Required Permissions -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+    <application
+        android:name=".MainApplication"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyCashBook">
+
+        <!-- AdMob App ID -->
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3940256099942544~3347511713"/>
+
+        <!-- Login Activity - LAUNCHER (with auto-login check) -->
+        <activity
+            android:name=".auth.LoginActivity"
+            android:exported="true"
+            android:theme="@style/Theme.MyCashBook.Login"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <!-- Home Activity (Dashboard) - Accessible after login -->
+        <activity
+            android:name=".ui.home.HomeActivity"
+            android:exported="false"
+            android:theme="@style/Theme.MyCashBook.Transparent"
+            android:screenOrientation="portrait"/>
+
+        <!-- Books -->
+        <activity
+            android:name=".ui.book.BookDetailsActivity"
+            android:theme="@style/Theme.MyCashBook.Transparent" />
+
+        <!-- Transactions -->
+        <activity
+            android:name=".ui.transaction.TransactionListActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.mycashbook.app.ui.transaction.TransactionDetailsActivity"
+            android:exported="false"
+            android:theme="@style/Theme.MyCashBook.Transparent" />
+
+        <activity
+            android:name=".ui.transaction.AddTransactionActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"/>
+
+        <!-- Import/Export -->
+        <activity
+            android:name=".ui.importexport.ImportActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".ui.importexport.ColumnMappingActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".ui.importexport.ImportSummaryActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".ui.report.ExportActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".ui.report.ReportPreviewActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+
+        <!-- Billing -->
+        <activity
+            android:name=".billing.SubscriptionActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+
+        <!-- Settings -->
+        <activity
+            android:name=".ui.settings.SettingsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".ui.settings.FeedbackActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".ui.settings.AboutActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+
+        <!-- BackupActivity Removed - Integrated into Settings -->
+
+
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+    </application>
+
+</manifest>

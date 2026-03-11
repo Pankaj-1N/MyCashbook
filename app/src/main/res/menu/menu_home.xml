@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Backup & Restore -->
+    <item
+        android:id="@+id/menu_backup"
+        android:icon="@android:drawable/ic_menu_save"
+        android:title="@string/home_menu_backup"
+        app:showAsAction="never" />
+
+    <!-- Upgrade Plan -->
+    <item
+        android:id="@+id/menu_upgrade"
+        android:icon="@android:drawable/ic_menu_upload"
+        android:title="@string/home_menu_upgrade"
+        app:showAsAction="never" />
+
+    <!-- Settings -->
+    <item
+        android:id="@+id/menu_settings"
+        android:icon="@android:drawable/ic_menu_preferences"
+        android:title="@string/home_menu_settings"
+        app:showAsAction="never" />
+
+</menu>

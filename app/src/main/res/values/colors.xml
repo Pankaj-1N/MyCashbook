@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ============================================================ -->
+    <!-- ELEGANT MIDNIGHT THEME - Modern Dark Palette (REFINED) -->
+    <!-- ============================================================ -->
+
+    <!-- Primary Brand Colors - Sophisticated Indigo -->
+    <color name="primary">#6366F1</color>
+    <color name="primary_dark">#4F46E5</color>
+    <color name="primary_light">#818CF8</color>
+    <color name="primary_gradient_start">#6366F1</color>
+    <color name="primary_gradient_end">#8B5CF6</color>
+
+    <!-- Accent Colors - Cyan (Main Accent) -->
+    <color name="accent">#06B6D4</color>
+    <color name="accent_dark">#0891B2</color>
+    <color name="accent_light">#22D3EE</color>
+    <color name="cyan">#00B4D8</color>
+
+    <!-- Transaction Colors (CONSISTENT ACROSS THEMES) -->
+    <color name="transaction_in">#00D09C</color>
+    <color name="transaction_out">#FF5252</color>
+    <color name="income_green">#00D09C</color>
+    <color name="expense_red">#FF5252</color>
+
+    <!-- ============================================================ -->
+    <!-- DARK THEME COLORS (Refined - Deeper/Muted) -->
+    <!-- ============================================================ -->
+    
+    <!-- Dark Background - Deeper -->
+    <color name="dark_background">#050A12</color>
+    <color name="dark_background_secondary">#0A1628</color>
+    <color name="dark_surface">#0D1A2D</color>
+    <color name="dark_surface_elevated">#162238</color>
+    <color name="dark_card">#0D1A2D</color>
+    <color name="dark_card_stroke">#1A3050</color>
+    
+    <!-- Dark Text -->
+    <color name="dark_text_primary">#FFFFFF</color>
+    <color name="dark_text_secondary">#94A3B8</color>
+    <color name="dark_text_hint">#64748B</color>
+    <color name="dark_text_disabled">#475569</color>
+    
+    <!-- Dark Dividers -->
+    <color name="dark_divider">#1A3050</color>
+
+    <!-- ============================================================ -->
+    <!-- LIGHT THEME COLORS (Muted/Darker Light Theme) -->
+    <!-- ============================================================ -->
+    
+    <!-- Light Background -->
+    <color name="light_background">#DEE4EA</color>
+    <color name="light_background_secondary">#E9EDF2</color>
+    <color name="light_surface">#E9EDF2</color>
+    <color name="light_surface_elevated">#E9EDF2</color>
+    <color name="light_card">#E9EDF2</color>
+    <color name="light_card_stroke">#C9D3DE</color>
+    
+    <!-- Light Text -->
+    <color name="light_text_primary">#0B1F33</color>
+    <color name="light_text_secondary">#44576B</color>
+    <color name="light_text_hint">#6E8196</color>
+    <color name="light_text_disabled">#9AA8B8</color>
+    
+    <!-- Light Accent (Blue) -->
+    <color name="light_accent">#2F80ED</color>
+    <color name="light_accent_dark">#0F1E33</color>
+    <color name="light_accent_light">#CFE0F5</color>
+    
+    <!-- Light Toolbar -->
+    <color name="light_toolbar_background">#0F1E33</color>
+    
+    <!-- Light Toggle OFF State -->
+    <color name="light_toggle_track_off">#BFCAD6</color>
+    
+    <!-- Light Pressed/Ripple State -->
+    <color name="light_ripple">#D2DBE5</color>
+    
+    <!-- Light Settings Profile Card -->
+    <color name="light_profile_card_bg">#1A2A40</color>
+    <color name="light_profile_secondary_text">#B6C4D6</color>
+    
+    <!-- Light Danger/Delete -->
+    <color name="light_danger">#E5533D</color>
+    
+    <!-- Light Dividers -->
+    <color name="light_divider">#C9D3DE</color>
+
+    <!-- ============================================================ -->
+    <!-- THEME-AWARE ALIASES (Used in layouts) -->
+    <!-- ============================================================ -->
+    
+    <!-- Background Colors -->
+    <color name="background_light">#DEE4EA</color>
+    <color name="background_dark">#050A12</color>
+    <color name="surface_light">#E9EDF2</color>
+    <color name="surface_dark">#0D1A2D</color>
+    <color name="surface_elevated">#162238</color>
+
+    <!-- Text Colors -->
+    <color name="text_primary_light">#0B1F33</color>
+    <color name="text_primary_dark">#FFFFFF</color>
+    <color name="text_secondary_light">#44576B</color>
+    <color name="text_secondary_dark">#94A3B8</color>
+    <color name="text_hint">#6E8196</color>
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#94A3B8</color>
+
+    <!-- Status Colors -->
+    <color name="success">#00D09C</color>
+    <color name="error">#FF5252</color>
+    <color name="warning">#F59E0B</color>
+    <color name="info">#3B82F6</color>
+    <color name="positive_green">#00D09C</color>
+
+    <!-- Basic Colors -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+
+    <!-- Card Colors -->
+    <color name="card_background">#0D1A2D</color>
+    <color name="card_stroke">#1A3050</color>
+
+    <!-- Overlay & Effects -->
+    <color name="overlay_dark">#CC000000</color>
+    <color name="overlay_light">#80000000</color>
+    <color name="divider">#E0E6ED</color>
+    <color name="divider_dark">#1A3050</color>
+
+    <!-- Grey Shades - Slate Palette -->
+    <color name="grey_50">#F8FAFC</color>
+    <color name="grey_100">#F1F5F9</color>
+    <color name="grey_200">#E2E8F0</color>
+    <color name="grey_300">#CBD5E1</color>
+    <color name="grey_400">#94A3B8</color>
+    <color name="grey_500">#64748B</color>
+    <color name="grey_600">#475569</color>
+    <color name="grey_700">#334155</color>
+    <color name="grey_800">#1E293B</color>
+    <color name="grey_900">#0F172A</color>
+
+    <!-- Shadows & Elevation -->
+    <color name="shadow_light">#1F000000</color>
+    <color name="shadow_medium">#3D000000</color>
+
+    <!-- Ripple Effects -->
+    <color name="ripple_light">#20000000</color>
+    <color name="ripple_dark">#20FFFFFF</color>
+    <color name="ripple_primary">#306366F1</color>
+    <color name="ripple">#4DFFFFFF</color>
+
+    <!-- FAB Colors -->
+    <color name="fab_primary">#00B4D8</color>
+    <color name="fab_ring">#00B4D8</color>
+
+    <!-- Nebula/Glow Effects (Dark Theme) -->
+    <color name="neon_cyan">#06B6D4</color>
+    <color name="neon_purple">#8B5CF6</color>
+    <color name="glow_indigo">#6366F1</color>
+    <color name="glow_cyan">#06B6D4</color>
+    <color name="glass_surface">#1AFFFFFF</color>
+    <color name="glass_stroke">#33FFFFFF</color>
+    <color name="border_subtle">#1A3050</color>
+
+    <!-- Background Gradient -->
+    <color name="bg_dark_start">#050A12</color>
+    <color name="bg_dark_end">#0D1A2D</color>
+    <color name="bg_dark">#050A12</color>
+    <color name="bg_darker">#030612</color>
+
+    <!-- Legacy Colors (backward compatibility) -->
+    <color name="red">#FF5252</color>
+    <color name="green">#00D09C</color>
+    <color name="red_500">#F44336</color>
+    <color name="green_500">#4CAF50</color>
+    <color name="orange_accent">#FF9800</color>
+    <color name="blue_accent">#2196F3</color>
+    <color name="toolbar_background">#0A1628</color>
+    <color name="nebula_overlay_purple">#8B5CF6</color>
+    <color name="nebula_overlay_blue">#3B82F6</color>
+    <color name="nebula_overlay_pink">#EC4899</color>
+    <color name="fab_secondary">#06B6D4</color>
+    <color name="blur_background">#F0FFFFFF</color>
+
+    <!-- Pastel Tints for Light Mode Cards (Muted) -->
+    <color name="tint_income">#D5ECD1</color>  <!-- Muted Green Tint -->
+    <color name="tint_expense">#ECCDD0</color> <!-- Muted Red Tint -->
+    <color name="tint_card_base">#CFE0F5</color> <!-- Muted Blue Tint -->
+    <color name="input_background">#DEE4EA</color>
+
+    <!-- Summary Card Background -->
+    <color name="card_summary_bg">#E9EDF2</color>
+    <color name="card_summary_stroke">#C9D3DE</color>
+
+    <!-- Theme-Specific Toolbar Color -->
+    <color name="toolbar_theme_color">@color/light_toolbar_background</color>
+
+</resources>

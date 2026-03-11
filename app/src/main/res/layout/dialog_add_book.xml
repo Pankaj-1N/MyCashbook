@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/overlay_dark"
+    android:clickable="true"
+    android:focusable="true">
+
+    <!-- Dialog Card -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="16dp"
+        app:cardBackgroundColor="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="28dp">
+
+            <!-- Header -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="24dp">
+
+                <!-- Icon -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="52dp"
+                    android:layout_height="52dp"
+                    app:cardCornerRadius="26dp"
+                    app:cardElevation="4dp"
+                    app:cardBackgroundColor="@color/primary_light">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_book_empty"
+                        android:tint="@color/white"
+                        android:contentDescription="@string/book_create" />
+
+                </androidx.cardview.widget.CardView>
+
+                <!-- Title -->
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="14dp"
+                    android:text="@string/book_create"
+                    android:textColor="@color/text_primary_light"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-medium" />
+
+            </LinearLayout>
+
+            <!-- Book Name Input -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/book_name"
+                style="@style/TextInputLayout.Custom"
+                app:hintTextColor="@color/primary"
+                app:boxStrokeColor="@color/primary"
+                app:startIconDrawable="@drawable/ic_book_empty"
+                app:startIconTint="@color/primary">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editBookName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapWords"
+                    android:maxLines="1"
+                    android:textColor="@color/text_primary_light"
+                    android:textSize="16sp"
+                    android:padding="16dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Description Input -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:hint="Description (Optional)"
+                style="@style/TextInputLayout.Custom"
+                app:hintTextColor="@color/text_secondary_light"
+                app:boxStrokeColor="@color/primary"
+                app:startIconDrawable="@android:drawable/ic_menu_edit"
+                app:startIconTint="@color/text_secondary_light">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editBookDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:maxLines="3"
+                    android:minLines="2"
+                    android:gravity="top|start"
+                    android:textColor="@color/text_primary_light"
+                    android:textSize="15sp"
+                    android:padding="16dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Buttons -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:gravity="end"
+                android:orientation="horizontal">
+
+                <!-- Cancel -->
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/buttonCancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="52dp"
+                    android:text="@string/cancel"
+                    android:textColor="@color/text_secondary_light"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingStart="24dp"
+                    android:paddingEnd="24dp"
+                    app:cornerRadius="14dp"
+                    app:strokeColor="@color/divider"
+                    app:strokeWidth="2dp"
+                    app:rippleColor="@color/ripple_light"
+                    style="@style/Widget.Material3.Button.OutlinedButton" />
+
+                <!-- Create -->
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/buttonCreate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="52dp"
+                    android:layout_marginStart="12dp"
+                    android:text="@string/book_create"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingStart="28dp"
+                    android:paddingEnd="28dp"
+                    app:cornerRadius="14dp"
+                    app:backgroundTint="@color/primary"
+                    app:icon="@drawable/ic_add"
+                    app:iconTint="@color/white"
+                    app:iconGravity="textStart"
+                    app:iconSize="22dp"
+                    app:elevation="6dp"
+                    style="@style/Widget.Material3.Button" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>

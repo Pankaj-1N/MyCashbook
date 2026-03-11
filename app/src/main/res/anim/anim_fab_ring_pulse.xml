@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- FAB Ring Pulse Animation
+     Creates a continuous expanding and fading effect around the FAB
+     Matches Figma design: ring expands outward while fading away -->
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:interpolator="@android:anim/decelerate_interpolator"
+    android:shareInterpolator="true">
+    
+    <!-- Scale up from 1.0 to 1.5 -->
+    <scale
+        android:fromXScale="1.0"
+        android:toXScale="1.5"
+        android:fromYScale="1.0"
+        android:toYScale="1.5"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:duration="1500"
+        android:repeatCount="infinite"
+        android:repeatMode="restart" />
+    
+    <!-- Fade out from 0.6 to 0 -->
+    <alpha
+        android:fromAlpha="0.6"
+        android:toAlpha="0"
+        android:duration="1500"
+        android:repeatCount="infinite"
+        android:repeatMode="restart" />
+        
+</set>

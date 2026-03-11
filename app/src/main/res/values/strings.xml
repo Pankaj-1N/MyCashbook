@@ -1,0 +1,115 @@
+<resources>
+    <string name="app_name">MyCashBook</string>
+    <string name="app_tagline">Your Daily Ledger Partner</string>
+
+    <!-- Google Android Client ID (for BackupActivity - Traditional Sign-In) -->
+    <string name="server_client_id">289644403111-i8hdp4oprrld32415s3406b5o6kk6u6v.apps.googleusercontent.com</string>
+
+    <!-- Google Web Client ID (for LoginActivity - One Tap Sign-In) -->
+    <string name="web_client_id">289644403111-18i4kpmnl2p1dsk0cs8imcjnp4uikq3k.apps.googleusercontent.com</string>
+
+
+    <!-- Splash Screen -->
+    <string name="splash_loading">Loading your ledger…</string>
+
+    <!-- Home Screen -->
+    <string name="home_title">My Books</string>
+    <string name="home_add_book">Add Book</string>
+    <string name="home_no_books">No books yet. Create your first book!</string>
+    <string name="home_menu_settings">Settings</string>
+    <string name="home_menu_backup">Backup &amp; Restore</string>
+    <string name="home_menu_upgrade">Upgrade Plan</string>
+
+    <!-- Book -->
+    <string name="book_name">Book Name</string>
+    <string name="book_name_hint">e.g., Personal, Business</string>
+    <string name="book_create">Create Book</string>
+    <string name="book_limit_reached">Book limit reached. Upgrade to create more books.</string>
+
+    <!-- SubBook -->
+    <string name="subbook_name">SubBook Name</string>
+    <string name="subbook_name_hint">e.g., Cash, Bank Account</string>
+    <string name="subbook_create">Create SubBook</string>
+    <string name="subbook_no_items">No subbooks yet. Create one to start tracking.</string>
+
+    <!-- Transaction -->
+    <string name="transaction_add">Add Transaction</string>
+    <string name="transaction_type_in">IN</string>
+    <string name="transaction_type_out">OUT</string>
+    <string name="transaction_amount">Amount</string>
+    <string name="transaction_notes">Notes</string>
+    <string name="transaction_date">Date</string>
+    <string name="transaction_save">Save</string>
+    <string name="transaction_no_items">No transactions yet.</string>
+
+    <!-- Filter -->
+    <string name="filter_title">Filter Transactions</string>
+    <string name="filter_date_single">Single Date</string>
+    <string name="filter_date_range">Date Range</string>
+    <string name="filter_notes">Search Notes</string>
+    <string name="filter_apply">Apply Filter</string>
+    <string name="filter_clear">Clear Filter</string>
+
+    <!-- Summary -->
+    <string name="summary_total_in">Total IN</string>
+    <string name="summary_total_out">Total OUT</string>
+    <string name="summary_balance">Balance</string>
+
+    <!-- Export -->
+    <string name="export_title">Export Report</string>
+    <string name="export_pdf">Export as PDF</string>
+    <string name="export_csv">Export as CSV</string>
+    <string name="export_excel">Export as Excel</string>
+    <string name="export_success">Export successful!</string>
+    <string name="export_failed">Export failed</string>
+    <string name="export_excel_business_only">Excel export is available in Business Plan only.</string>
+
+    <!-- Backup -->
+    <string name="backup_title">Backup &amp; Restore</string>
+    <string name="backup_sign_in">Sign in with Google</string>
+    <string name="backup_create">Create Backup</string>
+    <string name="backup_restore">Restore from Backup</string>
+    <string name="backup_auto">Auto Backup</string>
+    <string name="backup_success">Backup successful!</string>
+    <string name="backup_failed">Backup failed</string>
+    <string name="restore_success">Restore successful!</string>
+    <string name="restore_failed">Restore failed</string>
+
+    <!-- Import -->
+    <string name="import_title">Import Data</string>
+    <string name="import_select_file">Select File</string>
+    <string name="import_csv">Import CSV</string>
+    <string name="import_excel">Import Excel</string>
+    <string name="import_business_only">Import feature is available in Business Plan only.</string>
+    <string name="import_mapping_title">Map Columns</string>
+    <string name="import_success">Import successful!</string>
+
+    <!-- Billing -->
+    <string name="billing_title">Upgrade Your Plan</string>
+    <string name="billing_free">Free</string>
+    <string name="billing_premium">Premium</string>
+    <string name="billing_business">Business</string>
+    <string name="billing_subscribe">Subscribe</string>
+    <string name="billing_restore">Restore Purchase</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_theme">Theme</string>
+    <string name="settings_security">Security</string>
+    <string name="settings_pin_lock">PIN Lock</string>
+    <string name="settings_biometric">Biometric Lock</string>
+    <string name="settings_about">About</string>
+
+    <!-- General -->
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete">Delete</string>
+    <string name="edit">Edit</string>
+    <string name="save">Save</string>
+    <string name="search">Search</string>
+    <string name="loading">Loading…</string>
+    <string name="error">Error</string>
+    <string name="confirm_delete">Are you sure you want to delete?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+</resources>

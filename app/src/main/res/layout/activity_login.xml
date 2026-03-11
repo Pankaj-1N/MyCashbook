@@ -1,0 +1,538 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/loginRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="32dp">
+
+    <!-- Background Gradient (Dark slate-900 to blue-950) -->
+    <View
+        android:id="@+id/bgGradient"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_login_gradient" />
+    <!-- Animated Wave Background -->
+    <ImageView
+        android:id="@+id/waveBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/bg_wave_pattern"
+        android:scaleType="centerCrop"
+        android:alpha="0.1" />
+
+    <!-- Geometric Pattern Background (Grid Lines) -->
+    <View
+        android:id="@+id/geometricPattern"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_geometric_grid"
+        android:alpha="0.03" />
+
+    <!-- Decorative Circle Pattern Overlay -->
+    <ImageView
+        android:id="@+id/circlePattern"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:alpha="0.05"
+        android:contentDescription="Circle Pattern" />
+
+    <!-- Top Decorative Corner Element -->
+    <View
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_gravity="top|right"
+        android:background="@drawable/bg_corner_top_right"
+        android:alpha="0.1" />
+
+    <!-- Bottom Decorative Corner Element -->
+    <View
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_gravity="bottom|left"
+        android:background="@drawable/bg_corner_bottom_left"
+        android:alpha="0.1" />
+
+    <!-- Top Half Animated Sphere -->
+    <View
+        android:id="@+id/topWave"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_gravity="top"
+        android:layout_marginTop="-200dp"
+        android:scaleY="1"
+        android:background="@drawable/bg_sphere_top"
+        android:alpha="0.4" />
+
+    <!-- Bottom Half Animated Sphere -->
+    <View
+        android:id="@+id/bottomWave"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="-200dp"
+        android:scaleY="1"
+        android:background="@drawable/bg_sphere_bottom"
+        android:alpha="0.4" />
+
+    <!-- Main Content Container -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/rootLoginContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="24dp">
+
+        <!-- Center Content Group -->
+        <LinearLayout
+            android:id="@+id/centerContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <!-- Logo Container with Decorative Rings -->
+            <FrameLayout
+                android:id="@+id/logoContainer"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginBottom="32dp">
+
+                <!-- Outer Decorative Ring 1 (Cyan) -->
+                <View
+                    android:layout_width="136dp"
+                    android:layout_height="136dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/bg_ring_outer_cyan"
+                    android:rotation="6"
+                    android:alpha="0.2" />
+
+                <!-- Outer Decorative Ring 2 (Blue) -->
+                <View
+                    android:layout_width="136dp"
+                    android:layout_height="136dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/bg_ring_outer_blue"
+                    android:rotation="-6"
+                    android:alpha="0.2" />
+
+                <!-- Logo Card -->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/logoCard"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center"
+                    app:cardCornerRadius="24dp"
+                    app:cardElevation="16dp"
+                    app:cardBackgroundColor="@color/surface_dark"
+                    app:strokeWidth="1dp"
+                    app:strokeColor="@color/border_subtle">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <!-- Corner Accent: Top-Left (L-shape) -->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="6dp"
+                            android:orientation="vertical">
+
+                            <View
+                                android:layout_width="3dp"
+                                android:layout_height="16dp"
+                                android:background="#22D3EE" />
+
+                            <View
+                                android:layout_width="16dp"
+                                android:layout_height="3dp"
+                                android:background="#22D3EE" />
+                        </LinearLayout>
+
+                        <!-- Corner Accent: Top-Right (L-shape) -->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top|right"
+                            android:layout_margin="6dp"
+                            android:orientation="vertical">
+
+                            <View
+                                android:layout_width="16dp"
+                                android:layout_height="3dp"
+                                android:layout_gravity="end"
+                                android:background="#22D3EE" />
+
+                            <View
+                                android:layout_width="3dp"
+                                android:layout_height="16dp"
+                                android:layout_gravity="end"
+                                android:background="#22D3EE" />
+                        </LinearLayout>
+
+                        <!-- Corner Accent: Bottom-Left (L-shape) -->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|left"
+                            android:layout_margin="6dp"
+                            android:orientation="vertical">
+
+                            <View
+                                android:layout_width="16dp"
+                                android:layout_height="3dp"
+                                android:background="#22D3EE" />
+
+                            <View
+                                android:layout_width="3dp"
+                                android:layout_height="16dp"
+                                android:background="#22D3EE" />
+                        </LinearLayout>
+
+                        <!-- Corner Accent: Bottom-Right (L-shape) -->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|right"
+                            android:layout_margin="6dp"
+                            android:orientation="vertical">
+
+                            <View
+                                android:layout_width="3dp"
+                                android:layout_height="16dp"
+                                android:layout_gravity="end"
+                                android:background="#22D3EE" />
+
+                            <View
+                                android:layout_width="16dp"
+                                android:layout_height="3dp"
+                                android:layout_gravity="end"
+                                android:background="#22D3EE" />
+                        </LinearLayout>
+
+                        <!-- Logo Icon -->
+                        <ImageView
+                            android:layout_width="56dp"
+                            android:layout_height="56dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_wallet_logo"
+                            android:contentDescription="MyCashBook Logo"
+                            app:tint="@color/accent" />
+                    </FrameLayout>
+                </com.google.android.material.card.MaterialCardView>
+            </FrameLayout>
+
+            <!-- Title Section -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:layout_marginBottom="32dp">
+
+                <!-- App Title (Gradient Text Effect) -->
+                <TextView
+                    android:id="@+id/appTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_name"
+                    android:textSize="36sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/text_primary_dark"
+                    android:fontFamily="sans-serif-medium"
+                    android:layout_marginBottom="4dp"
+                    android:shadowColor="#80000000"
+                    android:shadowDx="0"
+                    android:shadowDy="2"
+                    android:shadowRadius="4" />
+
+                <!-- Tagline -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_tagline"
+                    android:textSize="14sp"
+                    android:textColor="@color/text_secondary_dark"
+                    android:alpha="0.9"
+                    android:layout_marginBottom="16dp" />
+
+                <!-- Decorative Line -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="8dp">
+
+                    <View
+                        android:layout_width="32dp"
+                        android:layout_height="2dp"
+                        android:background="@drawable/bg_gradient_line_left"
+                        android:layout_marginEnd="8dp" />
+
+                    <View
+                        android:layout_width="8dp"
+                        android:layout_height="8dp"
+                        android:background="@drawable/bg_dot_accent"
+                        android:alpha="0.8" />
+
+                    <View
+                        android:layout_width="32dp"
+                        android:layout_height="2dp"
+                        android:background="@drawable/bg_gradient_line_right"
+                        android:layout_marginStart="8dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Feature Cards Row -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:spacing="8dp"
+                android:layout_marginBottom="32dp">
+
+                <!-- Feature Card 1: Secure -->
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="0dp"
+                    app:cardBackgroundColor="@color/surface_elevated"
+                    app:strokeWidth="1dp"
+                    app:strokeColor="@color/border_subtle"
+                    android:layout_marginEnd="4dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal"
+                        android:padding="12dp">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/ic_shield"
+                            android:layout_marginBottom="4dp"
+                            android:contentDescription="Secure"
+                            app:tint="@color/accent" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Secure"
+                            android:textSize="11sp"
+                            android:textColor="@color/text_secondary_dark"
+                            android:gravity="center" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- Feature Card 2: Cloud Sync -->
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="0dp"
+                    app:cardBackgroundColor="@color/surface_elevated"
+                    app:strokeWidth="1dp"
+                    app:strokeColor="@color/border_subtle"
+                    android:layout_marginHorizontal="4dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal"
+                        android:padding="12dp">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/ic_cloud"
+                            android:layout_marginBottom="4dp"
+                            android:contentDescription="Cloud Sync"
+                            app:tint="@color/accent" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Cloud Sync"
+                            android:textSize="11sp"
+                            android:textColor="@color/text_secondary_dark"
+                            android:gravity="center" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- Feature Card 3: Private -->
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="0dp"
+                    app:cardBackgroundColor="@color/surface_elevated"
+                    app:strokeWidth="1dp"
+                    app:strokeColor="@color/border_subtle"
+                    android:layout_marginStart="4dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal"
+                        android:padding="12dp">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/ic_lock"
+                            android:layout_marginBottom="4dp"
+                            android:contentDescription="Private"
+                            app:tint="@color/accent" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Private"
+                            android:textSize="11sp"
+                            android:textColor="@color/text_secondary_dark"
+                            android:gravity="center" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+
+            <!-- Google Sign-In Card -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="24dp"
+                app:cardElevation="12dp"
+                app:cardBackgroundColor="@color/surface_dark"
+                app:strokeWidth="1dp"
+                app:strokeColor="@color/border_subtle">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <!-- Decorative Corner Pattern -->
+                    <View
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="top|right"
+                        android:background="@drawable/bg_corner_pattern"
+                        android:alpha="0.1" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="24dp">
+
+                        <!-- Google Sign-In Button -->
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/buttonGoogleLogin"
+                            android:layout_width="match_parent"
+                            android:layout_height="56dp"
+                            android:text="Sign in with Google"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:fontFamily="sans-serif-medium"
+                            app:cornerRadius="16dp"
+                            app:backgroundTint="@color/primary_gradient_start"
+                            app:icon="@drawable/ic_google"
+                            app:iconGravity="textStart"
+                            app:iconPadding="12dp"
+                            android:elevation="4dp" />
+
+                        <!-- Loading Progress (Initially Hidden) -->
+                        <ProgressBar
+                            android:id="@+id/progressBar"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="8dp"
+                            android:visibility="gone"
+                            android:indeterminateTint="@color/accent" />
+
+                        <!-- Sign In Text -->
+                        <TextView
+                            android:id="@+id/textSignIn"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Sign in with Google"
+                            android:textSize="14sp"
+                            android:textColor="@color/text_secondary_dark"
+                            android:textAlignment="center"
+                            android:visibility="gone" />
+
+                        <!-- Divider -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical"
+                            android:layout_marginTop="16dp">
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="1dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/bg_gradient_line_left" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Secure sign-in powered by Google"
+                                android:textSize="11sp"
+                                android:textColor="@color/text_secondary_dark"
+                                android:alpha="0.7"
+                                android:paddingHorizontal="12dp" />
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="1dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/bg_gradient_line_right" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </FrameLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+
+        <!-- Bottom Text -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Trusted by professionals worldwide"
+            android:textSize="12sp"
+            android:textColor="@color/text_secondary_dark"
+            android:alpha="0.6"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Version Info (Bottom Right) -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="v1.0.0"
+            android:textSize="11sp"
+            android:textColor="@color/text_secondary_dark"
+            android:alpha="0.5"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginBottom="12dp"
+            android:layout_marginEnd="12dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 1. Background Color -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#FFFFFF"/> <!-- White Background -->
+        </shape>
+    </item>
+
+    <!-- 2. The Logo in the Center -->
+    <!-- FIX: Use android:drawable on the <item> tag directly. -->
+    <!-- Do NOT use <bitmap> because ic_launcher might be an XML file. -->
+    <item
+        android:drawable="@mipmap/ic_launcher"
+        android:gravity="center"/>
+
+</layer-list>

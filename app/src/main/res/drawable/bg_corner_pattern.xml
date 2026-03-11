@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Decorative Corner Pattern (3 diagonal lines) -->
+    <item android:right="8dp" android:top="8dp">
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/transparent" />
+            <stroke
+                android:width="1dp"
+                android:color="#06B6D4" />
+        </shape>
+    </item>
+    <item android:right="16dp" android:top="16dp">
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/transparent" />
+            <stroke
+                android:width="1dp"
+                android:color="#06B6D4" />
+        </shape>
+    </item>
+    <item android:right="24dp" android:top="24dp">
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/transparent" />
+            <stroke
+                android:width="1dp"
+                android:color="#06B6D4" />
+        </shape>
+    </item>
+</layer-list>

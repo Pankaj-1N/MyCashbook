@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Background gradient matching Figma: from-slate-900 via-blue-950 to-slate-900 -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+      <gradient
+          android:angle="135"
+          android:startColor="#0F172A"
+          android:centerColor="#172554"
+          android:endColor="#0F172A"
+          android:type="linear" />
+</shape>

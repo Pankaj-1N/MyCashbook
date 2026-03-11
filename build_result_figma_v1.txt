@@ -1,0 +1,205 @@
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
+> Task :app:dataBindingMergeDependencyArtifactsDebug UP-TO-DATE
+> Task :app:generateDebugResValues UP-TO-DATE
+> Task :app:generateDebugResources UP-TO-DATE
+> Task :app:mergeDebugResources UP-TO-DATE
+> Task :app:packageDebugResources UP-TO-DATE
+> Task :app:parseDebugLocalResources UP-TO-DATE
+> Task :app:dataBindingGenBaseClassesDebug UP-TO-DATE
+> Task :app:javaPreCompileDebug UP-TO-DATE
+> Task :app:checkDebugAarMetadata UP-TO-DATE
+> Task :app:mapDebugSourceSetPaths UP-TO-DATE
+> Task :app:createDebugCompatibleScreenManifests UP-TO-DATE
+> Task :app:extractDeepLinksDebug UP-TO-DATE
+
+> Task :app:processDebugMainManifest
+package="com.mycashbook.app" found in source AndroidManifest.xml: C:\Users\Pankaj\AndroidStudioProjects\MyCashBook\app\src\main\AndroidManifest.xml.
+Setting the namespace via the package attribute in the source AndroidManifest.xml is no longer supported, and the value is ignored.
+Recommendation: remove package="com.mycashbook.app" from the source AndroidManifest.xml: C:\Users\Pankaj\AndroidStudioProjects\MyCashBook\app\src\main\AndroidManifest.xml.
+
+> Task :app:processDebugManifest
+> Task :app:mergeDebugShaders UP-TO-DATE
+> Task :app:compileDebugShaders NO-SOURCE
+> Task :app:generateDebugAssets UP-TO-DATE
+> Task :app:mergeDebugAssets UP-TO-DATE
+> Task :app:compressDebugAssets UP-TO-DATE
+> Task :app:l8DexDesugarLibDebug UP-TO-DATE
+> Task :app:checkDebugDuplicateClasses UP-TO-DATE
+> Task :app:desugarDebugFileDependencies UP-TO-DATE
+> Task :app:mergeExtDexDebug UP-TO-DATE
+> Task :app:mergeLibDexDebug UP-TO-DATE
+> Task :app:mergeDebugJniLibFolders UP-TO-DATE
+> Task :app:mergeDebugNativeLibs NO-SOURCE
+> Task :app:stripDebugDebugSymbols NO-SOURCE
+> Task :app:validateSigningDebug UP-TO-DATE
+> Task :app:writeDebugAppMetadata UP-TO-DATE
+> Task :app:writeDebugSigningConfigVersions UP-TO-DATE
+> Task :app:processDebugManifestForPackage
+> Task :app:processDebugResources
+
+> Task :app:compileDebugJavaWithJavac FAILED
+C:\Users\Pankaj\AndroidStudioProjects\MyCashBook\app\src\main\java\com\mycashbook\app\ui\transaction\TransactionDetailsActivity.java:126: error: cannot find symbol
+            toolbar.setTitleTextColor(Color.WHITE);
+                                      ^
+  symbol:   variable Color
+  location: class TransactionDetailsActivity
+C:\Users\Pankaj\AndroidStudioProjects\MyCashBook\app\src\main\java\com\mycashbook\app\ui\transaction\TransactionDetailsActivity.java:269: error: cannot find symbol
+            tvBalance.setTextColor(Color.parseColor("#00D09C")); // Default to green for positive
+                                   ^
+  symbol:   variable Color
+  location: class TransactionDetailsActivity
+C:\Users\Pankaj\AndroidStudioProjects\MyCashBook\app\src\main\java\com\mycashbook\app\ui\transaction\TransactionDetailsActivity.java:271: error: cannot find symbol
+                tvBalance.setTextColor(Color.parseColor("#FF5252"));
+                                       ^
+  symbol:   variable Color
+  location: class TransactionDetailsActivity
+C:\Users\Pankaj\AndroidStudioProjects\MyCashBook\app\src\main\java\com\mycashbook\app\ui\transaction\TransactionDetailsActivity.java:285: error: package LinearLayout does not exist
+                LinearLayout.LayoutParams lpIn = (LinearLayout.LayoutParams) viewBarIn.getLayoutParams();
+                            ^
+C:\Users\Pankaj\AndroidStudioProjects\MyCashBook\app\src\main\java\com\mycashbook\app\ui\transaction\TransactionDetailsActivity.java:285: error: package LinearLayout does not exist
+                LinearLayout.LayoutParams lpIn = (LinearLayout.LayoutParams) viewBarIn.getLayoutParams();
+                                                              ^
+C:\Users\Pankaj\AndroidStudioProjects\MyCashBook\app\src\main\java\com\mycashbook\app\ui\transaction\TransactionDetailsActivity.java:289: error: package LinearLayout does not exist
+                LinearLayout.LayoutParams lpOut = (LinearLayout.LayoutParams) viewBarOut.getLayoutParams();
+                            ^
+C:\Users\Pankaj\AndroidStudioProjects\MyCashBook\app\src\main\java\com\mycashbook\app\ui\transaction\TransactionDetailsActivity.java:289: error: package LinearLayout does not exist
+                LinearLayout.LayoutParams lpOut = (LinearLayout.LayoutParams) viewBarOut.getLayoutParams();
+                                                               ^
+C:\Users\Pankaj\AndroidStudioProjects\MyCashBook\app\src\main\java\com\mycashbook\app\ui\transaction\TransactionDetailsActivity.java:299: error: package LinearLayout does not exist
+                LinearLayout.LayoutParams lpIn = (LinearLayout.LayoutParams) viewBarIn.getLayoutParams();
+                            ^
+C:\Users\Pankaj\AndroidStudioProjects\MyCashBook\app\src\main\java\com\mycashbook\app\ui\transaction\TransactionDetailsActivity.java:299: error: package LinearLayout does not exist
+                LinearLayout.LayoutParams lpIn = (LinearLayout.LayoutParams) viewBarIn.getLayoutParams();
+                                                              ^
+C:\Users\Pankaj\AndroidStudioProjects\MyCashBook\app\src\main\java\com\mycashbook\app\ui\transaction\TransactionDetailsActivity.java:302: error: package LinearLayout does not exist
+                LinearLayout.LayoutParams lpOut = (LinearLayout.LayoutParams) viewBarOut.getLayoutParams();
+                            ^
+C:\Users\Pankaj\AndroidStudioProjects\MyCashBook\app\src\main\java\com\mycashbook\app\ui\transaction\TransactionDetailsActivity.java:302: error: package LinearLayout does not exist
+                LinearLayout.LayoutParams lpOut = (LinearLayout.LayoutParams) viewBarOut.getLayoutParams();
+                                                               ^
+C:\Users\Pankaj\AndroidStudioProjects\MyCashBook\app\src\main\java\com\mycashbook\app\ui\transaction\TransactionListAdapter.java:112: error: cannot find symbol
+                tvAmount.setTextColor(Color.parseColor("#00D09C"));
+                                      ^
+  symbol:   variable Color
+  location: class TransactionViewHolder
+C:\Users\Pankaj\AndroidStudioProjects\MyCashBook\app\src\main\java\com\mycashbook\app\ui\transaction\TransactionListAdapter.java:113: error: cannot find symbol
+                tvAmount.setText("+ " + CurrencyUtils.formatCurrency(transaction.getAmount()));
+                                        ^
+  symbol:   variable CurrencyUtils
+  location: class TransactionViewHolder
+C:\Users\Pankaj\AndroidStudioProjects\MyCashBook\app\src\main\java\com\mycashbook\app\ui\transaction\TransactionListAdapter.java:119: error: cannot find symbol
+                    imgIcon.setImageTintList(android.content.res.ColorStateList.valueOf(Color.parseColor("#00D09C")));
+                                                                                        ^
+  symbol:   variable Color
+  location: class TransactionViewHolder
+C:\Users\Pankaj\AndroidStudioProjects\MyCashBook\app\src\main\java\com\mycashbook\app\ui\transaction\TransactionListAdapter.java:123: error: cannot find symbol
+                tvAmount.setTextColor(Color.parseColor("#FF5252"));
+                                      ^
+  symbol:   variable Color
+  location: class TransactionViewHolder
+C:\Users\Pankaj\AndroidStudioProjects\MyCashBook\app\src\main\java\com\mycashbook\app\ui\transaction\TransactionListAdapter.java:124: error: cannot find symbol
+                tvAmount.setText("- " + CurrencyUtils.formatCurrency(transaction.getAmount()));
+                                        ^
+  symbol:   variable CurrencyUtils
+  location: class TransactionViewHolder
+C:\Users\Pankaj\AndroidStudioProjects\MyCashBook\app\src\main\java\com\mycashbook\app\ui\transaction\TransactionListAdapter.java:130: error: cannot find symbol
+                    imgIcon.setImageTintList(android.content.res.ColorStateList.valueOf(Color.parseColor("#FF5252")));
+                                                                                        ^
+  symbol:   variable Color
+  location: class TransactionViewHolder
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+17 errors
+
+[Incubating] Problems report is available at: file:///C:/Users/Pankaj/AndroidStudioProjects/MyCashBook/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:compileDebugJavaWithJavac'.
+> Compilation failed; see the compiler output below.
+  C:\Users\Pankaj\AndroidStudioProjects\MyCashBook\app\src\main\java\com\mycashbook\app\ui\transaction\TransactionDetailsActivity.java:126: error: cannot find symbol
+              toolbar.setTitleTextColor(Color.WHITE);
+                                        ^
+    symbol:   variable Color
+    location: class TransactionDetailsActivity
+  C:\Users\Pankaj\AndroidStudioProjects\MyCashBook\app\src\main\java\com\mycashbook\app\ui\transaction\TransactionDetailsActivity.java:269: error: cannot find symbol
+              tvBalance.setTextColor(Color.parseColor("#00D09C")); // Default to green for positive
+                                     ^
+    symbol:   variable Color
+    location: class TransactionDetailsActivity
+  C:\Users\Pankaj\AndroidStudioProjects\MyCashBook\app\src\main\java\com\mycashbook\app\ui\transaction\TransactionDetailsActivity.java:271: error: cannot find symbol
+                  tvBalance.setTextColor(Color.parseColor("#FF5252"));
+                                         ^
+    symbol:   variable Color
+    location: class TransactionDetailsActivity
+  C:\Users\Pankaj\AndroidStudioProjects\MyCashBook\app\src\main\java\com\mycashbook\app\ui\transaction\TransactionDetailsActivity.java:285: error: package LinearLayout does not exist
+                  LinearLayout.LayoutParams lpIn = (LinearLayout.LayoutParams) viewBarIn.getLayoutParams();
+                              ^
+  C:\Users\Pankaj\AndroidStudioProjects\MyCashBook\app\src\main\java\com\mycashbook\app\ui\transaction\TransactionDetailsActivity.java:285: error: package LinearLayout does not exist
+                  LinearLayout.LayoutParams lpIn = (LinearLayout.LayoutParams) viewBarIn.getLayoutParams();
+                                                                ^
+  C:\Users\Pankaj\AndroidStudioProjects\MyCashBook\app\src\main\java\com\mycashbook\app\ui\transaction\TransactionDetailsActivity.java:289: error: package LinearLayout does not exist
+                  LinearLayout.LayoutParams lpOut = (LinearLayout.LayoutParams) viewBarOut.getLayoutParams();
+                              ^
+  C:\Users\Pankaj\AndroidStudioProjects\MyCashBook\app\src\main\java\com\mycashbook\app\ui\transaction\TransactionDetailsActivity.java:289: error: package LinearLayout does not exist
+                  LinearLayout.LayoutParams lpOut = (LinearLayout.LayoutParams) viewBarOut.getLayoutParams();
+                                                                 ^
+  C:\Users\Pankaj\AndroidStudioProjects\MyCashBook\app\src\main\java\com\mycashbook\app\ui\transaction\TransactionDetailsActivity.java:299: error: package LinearLayout does not exist
+                  LinearLayout.LayoutParams lpIn = (LinearLayout.LayoutParams) viewBarIn.getLayoutParams();
+                              ^
+  C:\Users\Pankaj\AndroidStudioProjects\MyCashBook\app\src\main\java\com\mycashbook\app\ui\transaction\TransactionDetailsActivity.java:299: error: package LinearLayout does not exist
+                  LinearLayout.LayoutParams lpIn = (LinearLayout.LayoutParams) viewBarIn.getLayoutParams();
+                                                                ^
+  C:\Users\Pankaj\AndroidStudioProjects\MyCashBook\app\src\main\java\com\mycashbook\app\ui\transaction\TransactionDetailsActivity.java:302: error: package LinearLayout does not exist
+                  LinearLayout.LayoutParams lpOut = (LinearLayout.LayoutParams) viewBarOut.getLayoutParams();
+                              ^
+  C:\Users\Pankaj\AndroidStudioProjects\MyCashBook\app\src\main\java\com\mycashbook\app\ui\transaction\TransactionDetailsActivity.java:302: error: package LinearLayout does not exist
+                  LinearLayout.LayoutParams lpOut = (LinearLayout.LayoutParams) viewBarOut.getLayoutParams();
+                                                                 ^
+  C:\Users\Pankaj\AndroidStudioProjects\MyCashBook\app\src\main\java\com\mycashbook\app\ui\transaction\TransactionListAdapter.java:112: error: cannot find symbol
+                  tvAmount.setTextColor(Color.parseColor("#00D09C"));
+                                        ^
+    symbol:   variable Color
+    location: class TransactionViewHolder
+  C:\Users\Pankaj\AndroidStudioProjects\MyCashBook\app\src\main\java\com\mycashbook\app\ui\transaction\TransactionListAdapter.java:113: error: cannot find symbol
+                  tvAmount.setText("+ " + CurrencyUtils.formatCurrency(transaction.getAmount()));
+                                          ^
+    symbol:   variable CurrencyUtils
+    location: class TransactionViewHolder
+  C:\Users\Pankaj\AndroidStudioProjects\MyCashBook\app\src\main\java\com\mycashbook\app\ui\transaction\TransactionListAdapter.java:119: error: cannot find symbol
+                      imgIcon.setImageTintList(android.content.res.ColorStateList.valueOf(Color.parseColor("#00D09C")));
+                                                                                          ^
+    symbol:   variable Color
+    location: class TransactionViewHolder
+  C:\Users\Pankaj\AndroidStudioProjects\MyCashBook\app\src\main\java\com\mycashbook\app\ui\transaction\TransactionListAdapter.java:123: error: cannot find symbol
+                  tvAmount.setTextColor(Color.parseColor("#FF5252"));
+                                        ^
+    symbol:   variable Color
+    location: class TransactionViewHolder
+  C:\Users\Pankaj\AndroidStudioProjects\MyCashBook\app\src\main\java\com\mycashbook\app\ui\transaction\TransactionListAdapter.java:124: error: cannot find symbol
+                  tvAmount.setText("- " + CurrencyUtils.formatCurrency(transaction.getAmount()));
+                                          ^
+    symbol:   variable CurrencyUtils
+    location: class TransactionViewHolder
+  C:\Users\Pankaj\AndroidStudioProjects\MyCashBook\app\src\main\java\com\mycashbook\app\ui\transaction\TransactionListAdapter.java:130: error: cannot find symbol
+                      imgIcon.setImageTintList(android.content.res.ColorStateList.valueOf(Color.parseColor("#FF5252")));
+                                                                                          ^
+    symbol:   variable Color
+    location: class TransactionViewHolder
+  Note: Some input files use or override a deprecated API.
+  Note: Recompile with -Xlint:deprecation for details.
+  Note: Some input files use unchecked or unsafe operations.
+  Note: Recompile with -Xlint:unchecked for details.
+  17 errors
+
+* Try:
+> Check your code and dependencies to fix the compilation error(s)
+> Run with --scan to get full insights.
+
+BUILD FAILED in 2s
+29 actionable tasks: 5 executed, 24 up-to-date

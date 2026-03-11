@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="1080dp"
+    android:height="2400dp"
+    android:viewportWidth="1080"
+    android:viewportHeight="2400">
+
+    <!-- Deep gradient background -->
+    <path
+        android:fillColor="#0A1433"
+        android:pathData="M0 0H1080V2400H0z" />
+
+    <!-- Top wave -->
+    <path
+        android:fillColor="#173B7A"
+        android:pathData="
+            M0,400
+            C300,300 780,550 1080,420
+            L1080,0
+            L0,0
+            Z" />
+
+    <!-- Mid wave -->
+    <path
+        android:fillColor="#144989"
+        android:pathData="
+            M0,650
+            C260,750 820,550 1080,680
+            L1080,350
+            L0,350
+            Z" />
+
+    <!-- Bottom wave -->
+    <path
+        android:fillColor="#0F2F5F"
+        android:pathData="
+            M0,2100
+            C320,2000 760,2300 1080,2150
+            L1080,2400
+            L0,2400
+            Z" />
+
+</vector>
