@@ -1,2 +1,0 @@
-# MyCashbook
-finance tracking app
